@@ -17,12 +17,12 @@ theme:
   custom_dir: overrides
   icon:
     logo: material/library-shelves
-  
+
   palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: orange
       accent: amber
@@ -35,11 +35,18 @@ theme:
       primary: deep orange
       accent: green
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
 # # Add toggle for English and Vietnamese language
 #   extra:
 #   alternate:
 #     - name: English
-#       link: /en/ 
+#       link: /en/
 #       lang: en
 #     - name: Vietnamese
 #       link: /vi/
