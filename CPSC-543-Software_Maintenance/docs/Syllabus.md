@@ -1,105 +1,206 @@
+# Comprehensive Course Information for CPSC 543 - Software Maintenance (Spring 2025)
 
-**Course Overview:**
+## Course Overview
 
-This course, CPSC 543, delves into the crucial area of software maintenance. It will help you understand why software maintenance is important, how to build software ready for maintenance and what activities and management issues are involved. You'll be learning both the theoretical foundations and practical applications of maintaining large-scale software systems, including the use of maintenance metrics. The course is taught by Dr. Song-James Choi.
+This online course, CPSC 543, focuses on software maintenance, crucial for understanding how to build and maintain large-scale software systems. You will learn the theoretical foundations and practical applications, including maintenance metrics. The course emphasizes both preparing software for maintenance and managing maintenance activities.
 
-**Key Information:**
+## Instructor Information
 
-*   **Instructor:** Song-James Choi, Ph.D.
-    *   **Office:** CS427
-    *  **Phone:** (657)278-7257
-    *   **Email:** jchoi@fullerton.edu
-    *   **Office Hours:** Tuesdays and Thursdays from 5:30 PM to 6:30 PM via Zoom (link: [https://fullerton.zoom.us/j/85605249068](https://fullerton.zoom.us/j/85605249068))
-*   **Prerequisites:** CPSC 362 or equivalent work experience.
-*   **Required Textbook:** *Software Maintenance* by Grubb and Takang (2003). It is stated that the course will follow the book closely.
-*   **Recommended Textbook:** *Practical Software Maintenance* by Pigoski (1997)
-*   **Coursework:** The course is designed to give you hands-on experience and assessment on understanding the subject as you will have a term project, summarization of the reading materials, participation in discussion, midterm, and a final exam. You will also need to proactively engage with the online resources throughout the semester.
+*   **Instructor:** Dr. Song-James Choi, Ph.D.
+*   **Office:** CS427
+*   **Phone:** (657) 278-7257
+*   **Email:** [jchoi@fullerton.edu](mailto:jchoi@fullerton.edu)
+*   **Office Hours:** Tuesdays and Thursdays, 5:30 PM - 6:30 PM via Zoom ([https://fullerton.zoom.us/j/85605249068](https://fullerton.zoom.us/j/85605249068))
 
-**Grading Breakdown:**
+## Prerequisites
 
-*   **Term Project:** 35%
-    *   Project Topic Due: 3/5 (5%)
-    *   Project Draft Due: 4/16 (5%)
-    *   Final Version Due: 5/14 (25%)
-*   **Midterm Exam:** 15%
-    *   Available: 9 AM, 3/15 (Saturday) to 10 PM, 3/16 (Sunday)
-    *   Absolute Deadline: 10:00 PM on 3/16 (Sunday)
-    *   No Make-up Exam
-    *   If you have an emergency that prevents you from taking the midterm, contact the instructor ASAP and provide appropriate evidence to have the test weight added to final exam (total of 50% for the final)
-*   **Final Exam:** 30%
-    *   Available: 9 AM, 5/10 (Saturday) to 10 PM, 5/11 (Sunday)
-    *   Absolute Deadline: 10:00 PM on 5/11 (Sunday)
-    *   Missing the final exam will be addressed per university policy.
-*   **Class Participation:** 20%
-    *   Chapter Summaries: 10%
-        *   2-3 page summary for each chapter, in your own words
-        *   Summaries should include concepts and application/opinions
-        *   Submit all summaries for each part in a single file (Word or PDF)
-    *   Forum Discussions: 10%
-        *   At least 2 "meaningful" posts per chapter (totaling at least 28 posts)
-        *   Discussions should related to the part 2 of your Chapter summaries
-        *   No exam questions are allowed to discuss
-        *   Forums for each part close when chapter summaries for that part are due
+*   CPSC 362 or equivalent work experience.
 
-*   **Grading Scale:**
-    *   90%+: A- or higher
-    *   80-89%: B- or higher
-    *   70-79%: C- or higher
-    *   60-69%: D- or higher
-    *   0-59%: F
+## Required and Recommended Textbooks
 
-**Important Notes:**
+*   **Required:** *Software Maintenance* by Grubb and Takang (2003)
+*   **Recommended:** *Practical Software Maintenance* by Pigoski (1997)
 
-*   **Communication:** Check email and Canvas daily, or at least 2-3 times weekly.
-*   **Late Submissions:** Late submissions (except forum posts) will be accepted but with a 20% deduction for the first day, plus 1% for each additional day. The absolute last day for late submissions is May 14th (Wednesday).
-*   **Distance Learning:** The course is entirely online. All materials will be available on Canvas.
-*   **Online Participation Tracking:** Online activity, such as discussion posts and frequency of accessing course materials will be tracked.
-*   **Netiquette:** Follow the "Core Rules of Netiquette" outlined in the syllabus.
-*   **Academic Honesty:** All work must be your own (except for team projects). Academic dishonesty will result in an "F" for the course.
-*   **ADA Accommodations:** Contact the Office of Disability Support Services within the first week of classes for any special accommodations.
-*   **Emergency Procedures**: You should review the emergency procedures guidelines.
-*   **Contact Instructor:** Don't hesitate to contact the instructor with any course-related problems.
+## Coursework and Grading (Total 100%)
 
-**Time Chart (Mermaid Gantt):**
+*   **Term Project (35%)**
+    *   Project Topic Due: March 5th (5%)
+    *   Project Draft Due: April 16th (5%)
+    *   Final Version Due: May 14th (25%)
+*   **Midterm Exam (15%)**
+    *   Availability Period: March 15th (Saturday, 9 AM) - March 16th (Sunday, 10 PM)
+    *   Absolute Deadline: March 16th, 10:00 PM
+    *   No make-up exam. In emergencies, contact the instructor ASAP to shift weight to the final exam.
+*   **Final Exam (30%)**
+    *   Availability Period: May 10th (Saturday, 9 AM) - May 11th (Sunday, 10 PM)
+    *   Absolute Deadline: May 11th, 10:00 PM
+    *   University policy for missed final exams will be followed.
+*   **Class Participation (20%)**
+    *   **Chapter Summaries (10%):** 2-3 pages per chapter, covering concepts, applications, and your opinions. Submit per module as a single Word or PDF file.
+    *   **Forum Discussions (10%):** Minimum of 2 meaningful posts per chapter (28+ total). Discussions should relate to Part 2 of your chapter summaries. No exam question discussions allowed. Forums close with each module's summary due date.
+
+## Grading Scale
+
+*   A- or higher: 90%+
+*   B- or higher: 80-89%
+*   C- or higher: 70-79%
+*   D- or higher: 60-69%
+*   F: 0-59%
+
+## Important Course Policies and Notes
+
+*   **Communication:** Regularly check your email and Canvas (daily or 2-3 times a week).
+*   **Late Submissions:** Accepted (except forum posts) with a 20% deduction for the first late day and 1% per additional day. Absolute last submission date is May 14th.
+*   **Online Course:** Entirely online, with all materials on Canvas.
+*   **Online Activity Tracking:** Your engagement online will be monitored.
+*   **Netiquette:** Adhere to the "Core Rules of Netiquette" in the syllabus.
+*   **Academic Honesty:** All work must be original. Academic dishonesty will result in an "F".
+*   **ADA Accommodations:** Contact Disability Support Services within the first week for accommodations.
+*   **Emergency Procedures:** Review emergency guidelines.
+*   **Instructor Contact:** Contact Dr. Choi for any course-related issues.
+
+## Weekly Schedule and Tasks
+
+Here’s a detailed breakdown of what you should be doing each week. This combines the chapter readings, deadlines, and project milestones:
+
+### Module 1 (Chapters 1-4)
+
+*   **Week 1 (Jan 21 - Jan 27):**
+    *   Task: Familiarize yourself with the course structure on Canvas.
+    *   Task: Begin reading Chapter 1 of *Software Maintenance* textbook.
+    *   Action: Optional: Check out recommended textbook *Practical Software Maintenance*.
+*   **Week 2 (Jan 28 – Feb 3):**
+    *   Task: Finish reading Chapter 1 and Chapter 2.
+    *   Task: Start drafting chapter summaries for Chapters 1 and 2.
+    *   Action: Begin participating in the Module 1 forum discussions.
+*   **Week 3 (Feb 4 - Feb 10):**
+    *   Task: Read Chapter 3.
+    *   Task: Begin thinking about potential project topics and initial ideas.
+    *   Task: Continue drafting chapter summaries for Chapters 1-3.
+    *   Action: Actively participate in Module 1 forum discussions.
+*   **Week 4 (Feb 11 – Feb 17):**
+    *   Task: Read Chapter 4.
+    *   Task: Finalize chapter summaries for Chapters 1-4.
+    *   Task: Participate in Module 1 forum discussions.
+    *   **Deadline: Sunday, Feb 17 - Chapter Summaries for Module 1 due (Chapters 1-4). Module 1 forum closes.**
+
+### Module 2 (Chapters 5, 12 & 13)
+
+*   **Week 5 (Feb 18 – Feb 24):**
+    *   Task: Read Chapter 5.
+    *   Task: Start drafting chapter summary for Chapter 5.
+    *   Action: Begin participating in the Module 2 forum discussions.
+*   **Week 6 (Feb 25 – Mar 2):**
+    *   Task: Read Chapter 12.
+    *   Task: Draft chapter summaries for Chapter 5 and Chapter 12.
+    *   Action: Continue Module 2 forum discussions actively.
+*   **Week 7 (Mar 3 – Mar 9):**
+    *   Task: Read Chapter 13.
+    *   Task: Finalize chapter summaries for Chapters 5, 12, and 13.
+    *   Task: Finalize your project topic choice.
+    *   Action: Participate in Module 2 forum discussions.
+    *   **Deadline: Wednesday, Mar 5 - Project Topic Due.**
+    *   **Deadline: Sunday, Mar 9 - Chapter Summaries for Module 2 due (Chapters 5, 12, 13). Module 2 forum closes.**
+
+### Module 3 (Chapters 6 - 9)
+
+*   **Week 8 (Mar 10 – Mar 16):**
+    *   Task: Read Chapter 6.
+    *   Task: Begin preparing for the Midterm Exam (Chapters 1-5, 12, 13).
+    *   Task: Start drafting chapter summary for Chapter 6.
+    *   **Midterm Exam: Saturday, Mar 15 (9 AM) - Sunday, Mar 16 (10 PM). Absolute Deadline: Sunday, Mar 16, 10 PM.**
+*   **Week 9 (Mar 17 – Mar 23):**
+    *   Task: Read Chapter 7.
+    *   Task: Draft chapter summary for Chapter 7.
+    *   Action: Rest after the midterm, but stay on track with readings.
+*   **Week 10 (Mar 24 – Mar 30):**
+    *   Task: Read Chapter 8.
+    *   Task: Draft chapter summary for Chapter 8.
+    *   Action: Continue working on project planning.
+*   **Week of Mar 31 – Apr 6: Spring Recess - No classes or office hours.**
+    *   *Enjoy your break!*
+*   **Week 11 (Apr 7 – Apr 13):**
+    *   Task: Read Chapter 9.
+    *   Task: Finalize chapter summaries for Chapters 6-9.
+    *   Task: Complete a draft version of your term project.
+    *   Action: Participate in Module 3 forum discussions.
+    *   **Deadline: Sunday, Apr 13 - Chapter Summaries for Module 3 due (Chapters 6-9). Module 3 forum closes.**
+
+### Module 4 (Chapters 10, 11 & 14 and Project)
+
+*   **Week 12 (Apr 14 – Apr 20):**
+    *   Task: Read Chapter 10.
+    *   Task: Draft chapter summary for Chapter 10.
+    *   Task: Submit Project Draft.
+    *   **Deadline: Wednesday, Apr 16 - Project Draft Due.**
+*   **Week 13 (Apr 21 – Apr 27):**
+    *   Task: Read Chapter 11.
+    *   Task: Draft chapter summary for Chapter 11.
+    *   Action: Work on project revisions based on feedback.
+*   **Week 14 (Apr 28 – May 4):**
+    *   Task: Read Chapter 14.
+    *   Task: Finalize chapter summaries for Chapters 10, 11, and 14.
+    *   Action: Finalize your project.
+    *   **Deadline: Sunday, May 4 - Chapter Summaries for Module 4 due (Chapters 10, 11, 14). Module 4 forum closes.**
+*   **Week 15 (May 5 – May 11):**
+    *   Task: Finalize your term project.
+    *   Task: Prepare for the Final Exam (Comprehensive).
+    *   **Final Exam: Saturday, May 10 (9 AM) - Sunday, May 11 (10 PM). Absolute Deadline: Sunday, May 11, 10 PM.**
+*   **Week 16 (May 12 – May 18):**
+    *   **Deadline: Wednesday, May 14 - Project Final Version Due. Absolute Last Day for Late Submissions.**
+
+### Comprehensive Gantt Chart
+
+Here is a detailed Gantt chart for the entire course, summarizing all tasks and deadlines:
 
 ```mermaid
+---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
 gantt
-    title CPSC 543: Software Maintenance - Spring 2025
-
+    title CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
 
-    section January
-        Course Start             : 2025-01-22, 1d
-    section February
-      Study Chapters 1-3            :2025-02-01 , 28d
-    section March
-     Project Topic Selection     :2025-03-01, 4d
-        Project Topic Due           : 2025-03-05, 1d
-      Study Chapters 4-5                : 2025-03-06, 10d
-        Midterm Exam               : 2025-03-15, 2d
-    section April
-      Study Chapters 6-8       : 2025-03-17, 30d
-        Project Draft Due              : 2025-04-16, 1d
-    section May
-        Study Chapters 9-14           : 2025-04-17, 23d
-        Final Exam                     :2025-05-10,2d
-        Term Project Final Version Due : 2025-05-14, 1d
-       Last late day                   : 2025-05-14,1d
+    section Module 1 (Jan 21 - Feb 17)
+    Course Familiarization             : 2025-01-21, 1w
+    Chapter 1 & 2 Reading & Summaries : 2025-01-28, 2w
+    Chapter 3 & Project Topic Ideas   : 2025-02-04, 1w
+    Chapter 4 Reading & Summaries     : 2025-02-11, 1w
+    Module 1 Forum Participation      : 2025-01-21, 2025-02-17
+    Chapter Summaries Module 1 Due    : 2025-02-17, 0d
+
+    section Module 2 (Feb 18 - Mar 9)
+    Chapter 5 Reading & Summaries     : 2025-02-18, 1w
+    Chapter 12 Reading & Summaries    : 2025-02-25, 1w
+    Chapter 13 & Project Topic Finalize: 2025-03-03, 1w
+    Module 2 Forum Participation      : 2025-02-18, 2025-03-09
+    Project Topic Due                 : 2025-03-05, 0d
+    Chapter Summaries Module 2 Due    : 2025-03-09, 0d
+
+    section Module 3 (Mar 10 - Apr 13)
+    Chapter 6 & Midterm Prep        : 2025-03-10, 1w
+    Midterm Exam                    : 2025-03-15, 2d
+    Chapter 7 Reading & Summaries     : 2025-03-17, 1w
+    Chapter 8 Reading & Summaries     : 2025-03-24, 1w
+    Spring Recess                     : 2025-03-31, 1w
+    Chapter 9 & Project Draft Prep  : 2025-04-07, 1w
+    Module 3 Forum Participation      : 2025-03-10, 2025-04-13
+    Chapter Summaries Module 3 Due    : 2025-04-13, 0d
+
+
+    section Module 4 (Apr 14 - May 14)
+    Chapter 10 Reading & Summaries    : 2025-04-14, 1w
+    Project Draft Due                 : 2025-04-16, 0d
+    Chapter 11 Reading & Summaries    : 2025-04-21, 1w
+    Chapter 14 Reading & Summaries    : 2025-04-28, 1w
+    Module 4 Forum Participation      : 2025-04-14, 2025-05-04
+    Chapter Summaries Module 4 Due    : 2025-05-04, 0d
+    Final Project Finalization        : 2025-05-05, 1w
+    Final Exam                        : 2025-05-10, 2d
+    Project Final Version Due         : 2025-05-14, 0d
+
 ```
-
-**Explanation:**
-
-*   **`gantt`**: declares the start of a Gantt diagram.
-*   **`title`**: sets a title for the chart.
-*   **`dateFormat YYYY-MM-DD`**: configures the date format for axis and data.
-*   **`axisFormat %m/%d`**: sets the axis format as month/day.
-*   **`section`**: groups tasks by month.
-*   **`Task : startDate, duration`**: specifies task details. `d` represent days duration.
-
-**How to Use This Information:**
-
-*   **Stay Organized:** Use the time chart as a guide to pace your work throughout the semester.
-*   **Be Proactive:** Start your project early.  Sign up for a topic and work on it little by little.
-*   **Time Management:** Plan your study sessions to keep up with chapter readings and summaries.
-*   **Engage:** Make sure to participate in the forums regularly to earn participation points.  Aim for 2+ meaningful posts for each chapter.
