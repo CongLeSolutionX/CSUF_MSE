@@ -1,6 +1,10 @@
 site_name: MSE CSUF
 theme:
   name: material
+  custom_dir: overrides
+  icon:
+    logo: material/library-shelves
+  
   palette:
     # Palette toggle for light mode
     - scheme: default
