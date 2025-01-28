@@ -1,4 +1,4 @@
-# Copyright (c) 2-25 Cong Le <conglejobs@gmail.com>
+# Copyright (c) 2025 Cong Le <conglejobs@gmail.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -18,40 +18,23 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-# -----------------------------------------------------------------------------
+# Top-level config
+root = true
+
+# All files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+
 # Python
-# -----------------------------------------------------------------------------
-
-# Dependencies
-/venv
-.venv/*
-
-# Build files
-build
-site
-
-# Generated files
-*.zip
-
-# Caches and logs
-*.log
-.cache
-__pycache__
-
-# -----------------------------------------------------------------------------
-# General
-# -----------------------------------------------------------------------------
-
-# Never ignore .gitkeep files
-!**/.gitkeep
-
-# macOS internals
-.DS_Store
-
-# Temporary files
-TODO
-tmp
-
-# IDEs & Editors
-.idea
-*~
+[*.py]
+indent_style = space
+indent_size = 4
