@@ -4,7 +4,7 @@ site_name: MSE CSUF
 nav:
   - Introduction: 'index.md'
   - Syllabus: 'Syllabus.md'
-  # - 'Bug Tracker': '/bugs/'
+  - Textbook: 'Chapter_1/Chapter_1.md/'
 
 markdown_extensions:
   smarty: {}
