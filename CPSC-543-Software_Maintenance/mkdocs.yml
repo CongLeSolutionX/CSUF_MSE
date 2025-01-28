@@ -1,3 +1,5 @@
 site_name: MSE CSUF
 theme:
   name: material
+  palette:
+    primary: orange
