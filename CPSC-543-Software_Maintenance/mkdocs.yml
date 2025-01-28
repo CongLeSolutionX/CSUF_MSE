@@ -1,4 +1,17 @@
 site_name: MSE CSUF
+# site_url: "CHANGE_ME_LATER"
+
+nav:
+  - Home: '../'
+  - 'Syllabus': 'Syllabus.md'
+  # - 'Bug Tracker': '/bugs/'
+
+markdown_extensions:
+  smarty: {}
+  toc:
+    permalink: true
+  sane_lists: {}
+
 theme:
   name: material
   custom_dir: overrides
