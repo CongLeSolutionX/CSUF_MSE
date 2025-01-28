@@ -2,8 +2,8 @@ site_name: MSE CSUF
 # site_url: "CHANGE_ME_LATER"
 
 nav:
-  - Home: '../'
-  - 'Syllabus': 'Syllabus.md'
+  - Introduction: 'index.md'
+  - Syllabus: 'Syllabus.md'
   # - 'Bug Tracker': '/bugs/'
 
 markdown_extensions:
