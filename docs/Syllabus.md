@@ -155,12 +155,46 @@ Here is a detailed Gantt chart for the entire course, summarizing all tasks and 
 
 ```mermaid
 ---
+title: "CHANGE_ME_DADDY"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY-SA 4.0"
+copyright: "Copyright © 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
-  look: handDrawn
-  theme: dark
+  theme: base
 ---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+	'fontFamily': 'Comic Sans MS',
+    'gantt': {
+      'titleTopMargin': 25,
+      'barHeight': 15,
+      'barGap': 10,
+      'topPadding': 65,
+      'rightPadding': 10,
+      'leftPadding': 200,
+      'gridLineStartPadding': 25,
+      'sectionFontSize': 18,
+      'numberSectionStyles': 4,
+      'axisFormat': '%Y',
+      'topAxis': true,
+      'weekday': 'sunday'
+    },
+    'themeVariables': {
+      'primaryColor': '#C004',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'fontSize': '20px'
+    }
+  }
+}%%
 gantt
+    dateFormat  YYYY-MM-DD
+    title Nikola Tesla's USA Patents Timeline 📜🇺🇸
+
+    section Patents Granted in the 1880s
     title CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
