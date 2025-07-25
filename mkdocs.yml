@@ -1,20 +1,15 @@
 site_name: MSE CSUF
-# site_url: "CHANGE_ME_LATER"
-
+# site_url: "https://your-username.github.io/your-repo-name/" # Recommended to set this for correct links
+site_url: https://conglesolutionx.github.io/CSUF_MSE/
 nav:
   - Introduction: 'index.md'
   - Syllabus: 'Syllabus.md'
-  - Textbook: 'Chapter_1/Chapter_1.md/'
-
-markdown_extensions:
-  smarty: {}
-  toc:
-    permalink: true
-  sane_lists: {}
+  - Textbook: 'Chapter_1/Chapter_1.md'
 
 theme:
   name: material
-  custom_dir: overrides
+  # The 'custom_dir' line is removed to fix the build error, as the directory does not exist.
+  # If you create an 'overrides' directory later, you can add 'custom_dir: overrides' back.
   icon:
     logo: material/library-shelves
 
@@ -35,18 +30,25 @@ theme:
       primary: deep orange
       accent: green
 
+# Merged all markdown extensions under a single key.
 markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+  - sane_lists
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
 # Plugins
 plugins:
   - search
 
-# # Add toggle for English and Vietnamese language
-#   extra:
+# # To enable language toggle, uncomment this section and ensure you have
+# # the language-specific files in subdirectories (e.g., 'en', 'vi').
+# extra:
 #   alternate:
 #     - name: English
 #       link: /en/
