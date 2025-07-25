@@ -155,7 +155,7 @@ Here is a detailed Gantt chart for the entire course, summarizing all tasks and 
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY-SA 4.0"
@@ -191,10 +191,6 @@ config:
   }
 }%%
 gantt
-    dateFormat  YYYY-MM-DD
-    title Nikola Tesla's USA Patents Timeline 📜🇺🇸
-
-    section Patents Granted in the 1880s
     title CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
