@@ -1,29 +1,87 @@
-name: ci
+# title: ci.yml
+# author: Cong Le
+# version: 1.0
+# license(s): MIT, CC BY-SA 4.0
+# copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+
+# A more descriptive name for the workflow, clearly stating its purpose.
+name: Deploy MkDocs Site to GitHub Pages
+
+# Controls when the workflow will run.
 on:
   push:
     branches:
-      - master
+      # Triggers the workflow on push events to the main and master branches.
       - main
+      - master
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# Defines default permissions for the GITHUB_TOKEN.
+# 'contents: write' is required for the 'mkdocs gh-deploy' command to
+# push the built site to the 'gh-pages' branch.
 permissions:
   contents: write
+
+# Concurrency control ensures that only one deployment runs at a time for this
+# workflow. If a new commit is pushed, the in-progress run for the same
+# branch will be canceled, saving resources and preventing race conditions.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  # A single job named 'deploy' to build and deploy the site.
   deploy:
+    # Specifies the runner type. 'ubuntu-latest' is a good default.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Step 1: Check out the repository's code.
+      # This allows the workflow to access your project files (e.g., docs, mkdocs.yml).
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up a specific Python version.
+      # Pinning the version (e.g., '3.11') ensures a consistent and
+      # reproducible environment, preventing issues from unexpected Python updates.
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Configure and use a cache for pip dependencies.
+      # This step significantly speeds up builds by restoring packages from a cache
+      # instead of downloading them every time. The cache is invalidated automatically
+      # only when the contents of 'requirements.txt' change.
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip # The standard cache directory for pip.
+          # The cache key includes the runner's OS, Python version, and a hash
+          # of the requirements.txt file. This is the key to cache efficiency.
+          key: ${{ runner.os }}-python-${{ hashFiles('**/requirements.txt') }}
+          # A fallback key to restore the most recent cache if the exact key isn't found.
+          restore-keys: |
+            ${{ runner.os }}-python-
+
+      # Step 4: Install project dependencies.
+      # Using a 'requirements.txt' file is a best practice for managing Python
+      # dependencies. It makes your build deterministic and your project easier
+      # to set up locally.
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 5: Configure Git credentials for the deployment step.
+      # This is necessary for the gh-deploy command to commit to the gh-pages branch
+      # on behalf of the 'github-actions[bot]' user.
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+
+      # Step 6: Deploy the MkDocs site to GitHub Pages.
+      # The 'mkdocs gh-deploy' command automatically builds the site and pushes
+      # it to the 'gh-pages' branch of your repository.
+      # The '--force' flag is used to overwrite the history of the gh-pages branch.
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force

@@ -1,0 +1,5 @@
+# requirements.txt
+
+mkdocs-material==9.5.17
+# Add any other mkdocs plugins or Python packages here, for example:
+# mkdocs-macros-plugin==1.0.0
