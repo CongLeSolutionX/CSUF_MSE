@@ -9,8 +9,8 @@ This online course, CPSC 543, focuses on software maintenance, crucial for under
 *   **Instructor:** Dr. Song-James Choi, Ph.D.
 *   **Office:** CS427
 *   **Phone:** (657) 278-7257
-*   **Email:** [jchoi@fullerton.edu](mailto:jchoi@fullerton.edu)
-*   **Office Hours:** Tuesdays and Thursdays, 5:30 PM - 6:30 PM via Zoom ([https://fullerton.zoom.us/j/85605249068](https://fullerton.zoom.us/j/85605249068))
+*   **Email:** [jchoi@fullerton.edu]
+*   **Office Hours:** Tuesdays and Thursdays, 5:30 PM - 6:30 PM via Zoom
 
 ## Prerequisites
 
