@@ -155,17 +155,47 @@ Here is a detailed Gantt chart for the entire course, summarizing all tasks and 
 
 ```mermaid
 ---
+title: "CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY-SA 4.0"
+copyright: "Copyright © 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
-  look: handDrawn
-  theme: dark
+  theme: base
 ---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+	'fontFamily': 'Comic Sans MS',
+    'gantt': {
+      'titleTopMargin': 25,
+      'barHeight': 15,
+      'barGap': 10,
+      'topPadding': 65,
+      'rightPadding': 10,
+      'leftPadding': 200,
+      'gridLineStartPadding': 25,
+      'sectionFontSize': 18,
+      'numberSectionStyles': 4,
+      'axisFormat': '%Y',
+      'topAxis': true,
+      'weekday': 'sunday'
+    },
+    'themeVariables': {
+      'primaryColor': '#C004',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'fontSize': '20px'
+    }
+  }
+}%%
 gantt
     title CPSC 543: Software Maintenance - Spring 2025 Comprehensive Timeline
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
 
-    section Module 1 (Jan 21 - Feb 17)
+    section Module 1<br/>(Jan 21 - Feb 17)
     Course Familiarization             : 2025-01-21, 1w
     Chapter 1 & 2 Reading & Summaries : 2025-01-28, 2w
     Chapter 3 & Project Topic Ideas   : 2025-02-04, 1w
@@ -173,7 +203,7 @@ gantt
     Module 1 Forum Participation      : 2025-01-21, 2025-02-17
     Chapter Summaries Module 1 Due    : 2025-02-17, 0d
 
-    section Module 2 (Feb 18 - Mar 9)
+    section Module 2<br/>(Feb 18 - Mar 9)
     Chapter 5 Reading & Summaries     : 2025-02-18, 1w
     Chapter 12 Reading & Summaries    : 2025-02-25, 1w
     Chapter 13 & Project Topic Finalize: 2025-03-03, 1w
@@ -181,7 +211,7 @@ gantt
     Project Topic Due                 : 2025-03-05, 0d
     Chapter Summaries Module 2 Due    : 2025-03-09, 0d
 
-    section Module 3 (Mar 10 - Apr 13)
+    section Module 3<br/>(Mar 10 - Apr 13)
     Chapter 6 & Midterm Prep        : 2025-03-10, 1w
     Midterm Exam                    : 2025-03-15, 2d
     Chapter 7 Reading & Summaries     : 2025-03-17, 1w
@@ -192,7 +222,7 @@ gantt
     Chapter Summaries Module 3 Due    : 2025-04-13, 0d
 
 
-    section Module 4 (Apr 14 - May 14)
+    section Module 4<br/>(Apr 14 - May 14)
     Chapter 10 Reading & Summaries    : 2025-04-14, 1w
     Project Draft Due                 : 2025-04-16, 0d
     Chapter 11 Reading & Summaries    : 2025-04-21, 1w
