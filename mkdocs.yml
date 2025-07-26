@@ -8,6 +8,7 @@ nav:
 
 theme:
   name: material
+  # Use this command line to install material theme for the first time: `pip install mkdocs-material`
   # The 'custom_dir' line is removed to fix the build error, as the directory does not exist.
   # If you create an 'overrides' directory later, you can add 'custom_dir: overrides' back.
   icon:

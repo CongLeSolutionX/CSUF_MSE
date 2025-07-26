@@ -15,7 +15,3 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
-
-> [!TIP]
-> Command lines to install Material theme for this MKDocs repo project when run locally:
-> `pip install mkdocs-material`
