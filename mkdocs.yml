@@ -1,29 +1,40 @@
+# --- Basic Configuration ---
 site_name: MSE CSUF
-# site_url: "https://your-username.github.io/your-repo-name/" # Recommended to set this for correct links
-site_url: https://conglesolutionx.github.io/CSUF_MSE/
+# IMPORTANT: Replace with your site's public URL for correct SEO and social cards.
+site_url: "https://conglesolutionx.github.io/CSUF_MSE/"
+site_author: "Cong Le"
+site_description: "Course materials and resources for the MSE program at CSUF."
+
+# --- Repository Integration ---
+# Links the site to your repository for "Edit this page" and source links.
+repo_url: "https://github.com/conglesolutionx/CSUF_MSE"
+repo_name: "CSUF_MSE"
+# Sets the edit URI to point to the 'main' branch. Change if you use 'master'.
+edit_uri: "edit/main/docs/"
+
+# --- Navigation Structure ---
 nav:
   - Introduction: 'index.md'
   - Syllabus: 'Syllabus.md'
   - Textbook: 'Chapter_1/Chapter_1.md'
 
+# --- Theme Configuration ---
 theme:
   name: material
-  # Use this command line to install material theme for the first time: `pip install mkdocs-material`
-  # The 'custom_dir' line is removed to fix the build error, as the directory does not exist.
-  # If you create an 'overrides' directory later, you can add 'custom_dir: overrides' back.
+
+  # Adds a customizable footer. Requires creating an 'overrides' directory.
+  custom_dir: overrides
+
+  # Palette and branding
   icon:
     logo: material/library-shelves
-
   palette:
-    # Palette toggle for light mode
     - scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
       primary: orange
       accent: amber
-
-    # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
@@ -31,29 +42,142 @@ theme:
       primary: deep orange
       accent: green
 
-# Merged all markdown extensions under a single key.
+  # --- Enhanced Features for UX & Navigation ---
+  features:
+    # Adds a top-level tabbed navigation bar.
+    - navigation.tabs
+    # Expands navigation sections automatically on the left sidebar.
+    - navigation.sections
+    # Enables a "back to top" button.
+    - navigation.top
+    # Integrates the Table of Contents into the left sidebar.
+    - toc.integrate
+    # Enables single-page application (SPA) like instant loading between pages.
+    - navigation.instant
+    # Search suggestions, highlighting, and a share button.
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Adds a "copy to clipboard" button to all code blocks.
+    - content.code.copy
+    # Allows for annotating code blocks.
+    - content.code.annotate
+
+# --- Markdown Extensions for Richer Content ---
 markdown_extensions:
+  # Basic extensions
   - smarty
+  - sane_lists
   - toc:
       permalink: true
-  - sane_lists
-  - pymdownx.superfences:
+      # Adds a slugify function for better, more readable anchor links.
+      slugify: !!python/name:pymdownx.slugs.uslugify
+
+  # PyMdownx Extensions (enhances Markdown capabilities significantly)
+  - pymdownx.superfences: # For Mermaid diagrams and advanced code blocks
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  # Adds support for admonitions (note, tip, warning, etc.).
+  - admonition
+  - pymdownx.details # Makes admonitions collapsible
+  # Adds support for creating tabbed content sections.
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Adds support for task lists, e.g., - [x] Done.
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Improves code highlighting with line numbers and annotations.
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  # Enables emoji support, e.g., :smile:.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Adds support for footnotes.
+  - footnotes
+  # Allows for adding attributes to Markdown elements (e.g., for custom CSS).
+  - attr_list
+  # Allows Markdown processing inside of HTML blocks.
+  - md_in_html
 
-# Plugins
+# --- Plugins ---
 plugins:
   - search
+  # Generates social media preview cards automatically.
+  - social
 
-# # To enable language toggle, uncomment this section and ensure you have
-# # the language-specific files in subdirectories (e.g., 'en', 'vi').
-# extra:
-#   alternate:
-#     - name: English
-#       link: /en/
-#       lang: en
-#     - name: Vietnamese
-#       link: /vi/
-#       lang: vi
+# --- Custom Footer and Social Links ---
+extra:
+  # Creates social links that will be displayed in the footer.
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/your-username"
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/in/your-profile/"
+    - icon: fontawesome/solid/paper-plane
+      link: "mailto:your-email@example.com"
+
+# site_name: MSE CSUF
+# # site_url: "https://your-username.github.io/your-repo-name/" # Recommended to set this for correct links
+# site_url: https://conglesolutionx.github.io/CSUF_MSE/
+# nav:
+#   - Introduction: 'index.md'
+#   - Syllabus: 'Syllabus.md'
+#   - Textbook: 'Chapter_1/Chapter_1.md'
+
+# theme:
+#   name: material
+#   # Use this command line to install material theme for the first time: `pip install mkdocs-material`
+#   # The 'custom_dir' line is removed to fix the build error, as the directory does not exist.
+#   # If you create an 'overrides' directory later, you can add 'custom_dir: overrides' back.
+#   icon:
+#     logo: material/library-shelves
+
+#   palette:
+#     # Palette toggle for light mode
+#     - scheme: default
+#       toggle:
+#         icon: material/brightness-7
+#         name: Switch to dark mode
+#       primary: orange
+#       accent: amber
+
+#     # Palette toggle for dark mode
+#     - scheme: slate
+#       toggle:
+#         icon: material/brightness-4
+#         name: Switch to light mode
+#       primary: deep orange
+#       accent: green
+
+# # Merged all markdown extensions under a single key.
+# markdown_extensions:
+#   - smarty
+#   - toc:
+#       permalink: true
+#   - sane_lists
+#   - pymdownx.superfences:
+#       custom_fences:
+#         - name: mermaid
+#           class: mermaid
+#           format: !!python/name:pymdownx.superfences.fence_code_format
+
+# # Plugins
+# plugins:
+#   - search
+
+# # # To enable language toggle, uncomment this section and ensure you have
+# # # the language-specific files in subdirectories (e.g., 'en', 'vi').
+# # extra:
+# #   alternate:
+# #     - name: English
+# #       link: /en/
+# #       lang: en
+# #     - name: Vietnamese
+# #       link: /vi/
+# #       lang: vi
