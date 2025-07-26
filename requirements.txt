@@ -1,6 +1,12 @@
 # requirements.txt
 
-mkdocs-material==9.5.17
+## mkdocs-material==9.5.17
+
+# This line installs mkdocs-material AND its optional imaging dependencies
+# (like Pillow and cairosvg) needed for the social plugin.
+mkdocs-material[imaging]==9.5.17
+
+
 pymdown-extensions
 # Add any other mkdocs plugins or Python packages here, for example:
 # mkdocs-macros-plugin==1.0.0
